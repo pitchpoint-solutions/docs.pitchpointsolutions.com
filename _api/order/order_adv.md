@@ -46,8 +46,6 @@ data='{
           "Employer" : [ {
             "Name" : "ABC Corp",
             "Phone" : "987-654-3210",
-            "EIN" : "12-3456789",
-            "MonthlyIncome" : "5000",
             "MonthsOnJob" : "24",
             "YearsOnJob" : "2",
             "Address" : {
