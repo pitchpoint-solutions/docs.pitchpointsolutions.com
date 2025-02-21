@@ -70,8 +70,7 @@ data='{
           "AddressLine1" : "123 Apple St",
           "City" : "Bearsville",
           "State" : "CA",
-          "PostalCode" : "12345",
-          "County" : "Carrot County"
+          "PostalCode" : "12345"
         }
       }
     }, {
