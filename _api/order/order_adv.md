@@ -29,7 +29,6 @@ data='{
         "NameSuffix" : "Jr.",
         "SSN" : "123-45-6789",
         "DOB" : "01/01/1980",
-        "Gender" : "M",
         "HomePhone" : "123-456-7890",
         "Residences" : {
           "Residence" : [ {
