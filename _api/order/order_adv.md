@@ -29,7 +29,6 @@ data='{
         "NameSuffix" : "Jr.",
         "SSN" : "123-45-6789",
         "DOB" : "01/01/1980",
-        "Gender" : "M",
         "HomePhone" : "123-456-7890",
         "Residences" : {
           "Residence" : [ {
@@ -37,8 +36,7 @@ data='{
               "AddressLine1" : "123 Main St",
               "City" : "Anytown",
               "State" : "CA",
-              "PostalCode" : "12345",
-              "County" : "AnyCounty"
+              "PostalCode" : "12345"
             },
             "CurrentIndicator" : true
           } ]
@@ -47,36 +45,19 @@ data='{
           "Employer" : [ {
             "Name" : "ABC Corp",
             "Phone" : "987-654-3210",
-            "EIN" : "12-3456789",
-            "MonthlyIncome" : "5000",
             "MonthsOnJob" : "24",
             "YearsOnJob" : "2",
             "Address" : {
               "AddressLine1" : "123 Main St",
               "City" : "Anytown",
               "State" : "CA",
-              "PostalCode" : "12345",
-              "County" : "AnyCounty"
+              "PostalCode" : "12345"
             },
             "CurrentIndicator" : true,
             "SelfEmployedIndicator" : false
           } ]
         },
         "Declarations" : {
-          "AlimonyChildSupportObligationIndicator" : false,
-          "BorrowedDownPaymentIndicator" : false,
-          "CitizenshipResidencyType" : "PermanentResidentAlien",
-          "CoMakerEndorserOfNoteIndicator" : false,
-          "HomeownerPastThreeYearsIndicator" : true,
-          "IntentToOccupyIndicator" : true,
-          "LoanForeclosureOrJudgementIndicator" : false,
-          "OutstandingJudgementsIndicator" : false,
-          "PartyToLawsuitIndicator" : false,
-          "PresentlyDelinquentIndicator" : false,
-          "PriorPropertyTitleType" : "JointWithSpouse",
-          "PriorPropertyUsageType" : "PrimaryResidence",
-          "PriorPropertyUsageTypeOtherDescription" : "N/A",
-          "PropertyForeclosedPastSevenYearsIndicator" : false,
           "BorrowerFirstTimeHomebuyerIndicator" : true
         }
       }
@@ -86,29 +67,8 @@ data='{
           "AddressLine1" : "123 Apple St",
           "City" : "Bearsville",
           "State" : "CA",
-          "PostalCode" : "12345",
-          "County" : "Carrot County"
-        },
-        "SupplementaryId" : "SUPP123",
-        "AssessorsParcelNumber" : "APN123",
-        "CountyFIPSCode" : "12345",
-        "SaleDate" : "01/01/2020",
-        "SaleAmount" : "300000",
-        "AssessmentDate" : "01/01/2021",
-        "AssessmentAmount" : "350000",
-        "PropertyUsage" : "PrimaryResidence",
-        "PropertyUsageOtherDescription" : "N/A",
-        "PropertyType" : "DetachedCondominium",
-        "PropertyTypeOtherDescription" : "N/A",
-        "NumberOfUnits" : "1",
-        "Valuations" : {
-          "Valuation" : [ {
-            "ValuationType" : "Appraisal",
-            "ValuationTypeOtherDescription" : "N/A",
-            "ValuationAmount" : "350000"
-          } ]
-        },
-        "OwnerName" : "John Doe"
+          "PostalCode" : "12345"
+        }
       }
     }, {
       "Participant" : {
@@ -127,8 +87,7 @@ data='{
           "AddressLine1" : "123 Dunkin St",
           "City" : "Frisco",
           "State" : "CA",
-          "PostalCode" : "12345",
-          "County" : "Eagle Ridge County"
+          "PostalCode" : "12345"
         },
         "Licenses" : {
           "License" : [ {
@@ -228,9 +187,6 @@ See [Loan Participant Type](/api/order/enums/types_loanparticipant/) for a list 
 | City               | (mandatory) City of the property of a person                                              | string |
 | State              | (mandatory) State of the property of a person.  2-character code indicating which state.  | string |
 | PostalCode         | (mandatory) 5 or 9 digit zip code of the property.                                        | string |
-| PropertyUsage      | (optional) See enums at: [Property Type](/api/order/enums/types_property/)                | string |
-| PropertyType       | (optional) See enums at: [Property Type](/api/order/enums/types_property/)                | string |
-| _all other fields_ | (optional) other fields are optional                                                      | string |
 
 <div class="datatable-end"></div>
 

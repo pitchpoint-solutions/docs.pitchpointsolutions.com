@@ -387,7 +387,6 @@ curl -X POST https://api.pointservices.com/riskinsight-services-ws/resources/v1/
         "NameSuffix" : "Jr.",
         "SSN" : "123-45-6789",
         "DOB" : "01/01/1980",
-        "Gender" : "M",
         "HomePhone" : "123-456-7890",
         "Residences" : {
           "Residence" : [ {
@@ -395,8 +394,7 @@ curl -X POST https://api.pointservices.com/riskinsight-services-ws/resources/v1/
               "AddressLine1" : "123 Main St",
               "City" : "Anytown",
               "State" : "CA",
-              "PostalCode" : "12345",
-              "County" : "AnyCounty"
+              "PostalCode" : "12345"
             },
             "CurrentIndicator" : true
           } ]
@@ -405,36 +403,19 @@ curl -X POST https://api.pointservices.com/riskinsight-services-ws/resources/v1/
           "Employer" : [ {
             "Name" : "ABC Corp",
             "Phone" : "987-654-3210",
-            "EIN" : "12-3456789",
-            "MonthlyIncome" : "5000",
             "MonthsOnJob" : "24",
             "YearsOnJob" : "2",
             "Address" : {
               "AddressLine1" : "123 Main St",
               "City" : "Anytown",
               "State" : "CA",
-              "PostalCode" : "12345",
-              "County" : "AnyCounty"
+              "PostalCode" : "12345"
             },
             "CurrentIndicator" : true,
             "SelfEmployedIndicator" : false
           } ]
         },
         "Declarations" : {
-          "AlimonyChildSupportObligationIndicator" : false,
-          "BorrowedDownPaymentIndicator" : false,
-          "CitizenshipResidencyType" : "PermanentResidentAlien",
-          "CoMakerEndorserOfNoteIndicator" : false,
-          "HomeownerPastThreeYearsIndicator" : true,
-          "IntentToOccupyIndicator" : true,
-          "LoanForeclosureOrJudgementIndicator" : false,
-          "OutstandingJudgementsIndicator" : false,
-          "PartyToLawsuitIndicator" : false,
-          "PresentlyDelinquentIndicator" : false,
-          "PriorPropertyTitleType" : "JointWithSpouse",
-          "PriorPropertyUsageType" : "PrimaryResidence",
-          "PriorPropertyUsageTypeOtherDescription" : "N/A",
-          "PropertyForeclosedPastSevenYearsIndicator" : false,
           "BorrowerFirstTimeHomebuyerIndicator" : true
         }
       }
@@ -444,29 +425,8 @@ curl -X POST https://api.pointservices.com/riskinsight-services-ws/resources/v1/
           "AddressLine1" : "123 Apple St",
           "City" : "Bearsville",
           "State" : "CA",
-          "PostalCode" : "12345",
-          "County" : "Carrot County"
-        },
-        "SupplementaryId" : "SUPP123",
-        "AssessorsParcelNumber" : "APN123",
-        "CountyFIPSCode" : "12345",
-        "SaleDate" : "01/01/2020",
-        "SaleAmount" : "300000",
-        "AssessmentDate" : "01/01/2021",
-        "AssessmentAmount" : "350000",
-        "PropertyUsage" : "PrimaryResidence",
-        "PropertyUsageOtherDescription" : "N/A",
-        "PropertyType" : "DetachedCondominium",
-        "PropertyTypeOtherDescription" : "N/A",
-        "NumberOfUnits" : "1",
-        "Valuations" : {
-          "Valuation" : [ {
-            "ValuationType" : "Appraisal",
-            "ValuationTypeOtherDescription" : "N/A",
-            "ValuationAmount" : "350000"
-          } ]
-        },
-        "OwnerName" : "John Doe"
+          "PostalCode" : "12345"
+        }
       }
     }, {
       "Participant" : {
@@ -485,8 +445,7 @@ curl -X POST https://api.pointservices.com/riskinsight-services-ws/resources/v1/
           "AddressLine1" : "123 Dunkin St",
           "City" : "Frisco",
           "State" : "CA",
-          "PostalCode" : "12345",
-          "County" : "Eagle Ridge County"
+          "PostalCode" : "12345"
         },
         "Licenses" : {
           "License" : [ {
