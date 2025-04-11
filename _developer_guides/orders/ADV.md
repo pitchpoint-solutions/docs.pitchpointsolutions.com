@@ -420,6 +420,29 @@ curl -X POST https://api.pointservices.com/riskinsight-services-ws/resources/v1/
         }
       }
     }, {
+      "Person" : {
+        "FirstName" : "Jane",
+        "MiddleName" : "B",
+        "LastName" : "Doe",
+        "SSN" : "123-45-6789",
+        "DOB" : "01/01/1980",
+        "HomePhone" : "123-456-7890",
+        "Residences" : {
+          "Residence" : [ {
+            "Address" : {
+              "AddressLine1" : "123 Main St",
+              "City" : "Anytown",
+              "State" : "CA",
+              "PostalCode" : "12345"
+            },
+            "CurrentIndicator" : true
+          } ]
+        },
+        "Declarations" : {
+          "BorrowerFirstTimeHomebuyerIndicator" : true
+        }
+      }
+    }, {
       "Property" : {
         "Address" : {
           "AddressLine1" : "123 Apple St",
@@ -453,6 +476,23 @@ curl -X POST https://api.pointservices.com/riskinsight-services-ws/resources/v1/
             "LicenseType" : "Appraiser License",
             "LicenseState" : "CA"
           } ]
+        }
+      }
+    }, {
+      "Participant" : {
+        "CompanyName" : "ABC Corp",
+        "ParticipantType" : "Escrow",
+        "ContactPoint" : {
+          "RoleType" : "Work",
+          "Type" : "Phone",
+          "Value" : "1234567890",
+          "PreferenceIndicator" : true
+        },
+        "Address" : {
+          "AddressLine1" : "123 Dunkin St",
+          "City" : "Frisco",
+          "State" : "CA",
+          "PostalCode" : "12345"
         }
       }
     } ]
