@@ -35,11 +35,11 @@ curl -X POST https://api.pointservices.com/user-management-services-ws/oauth2/00
 #### Request Data Properties
 <div class="datatable-begin"></div>
 
-| Property  | Description                                                                                                                         | Type   | Required |
-|-----------|-------------------------------------------------------------------------------------------------------------------------------------|--------|----------|
-| username  | Your username.                                                                                                                      | string | yes      |
-| password  | Your password.                                                                                                                      | string | yes      |
-| useralias | If your company is using a shared username and password, set this parameter so that your actions are attributed specifically to you | string | no       |
+| Property  | Description                                                                                                                                                                                         | Type   | Required |
+|-----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------|----------|
+| username  | Your username.                                                                                                                                                                                      | string | yes      |
+| password  | Your password.                                                                                                                                                                                      | string | yes      |
+| useralias | Use the `useralias` parameter when your organization requires that the authenticated principal impersonate an account within your organization. This feature must be enabled by your account manager. | string | no       |
 
 
 <div class="datatable-end"></div>

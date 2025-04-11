@@ -30,7 +30,7 @@ curl -X POST https://api.pointservices.com/user-management-services-ws/oauth2/00
 }'
 ```
 
-Use the `useralias` option if your company is using a shared password so that your work can be correctly identified to you.  
+Use the `useralias` parameter when your organization requires that the authenticated principal impersonate an account within your organization. This feature must be enabled by your account manager.  
 
 ```bash
 curl -X POST https://api.pointservices.com/user-management-services-ws/oauth2/002/signInWithPassword \
