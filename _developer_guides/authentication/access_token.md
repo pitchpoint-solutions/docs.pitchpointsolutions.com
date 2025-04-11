@@ -30,6 +30,18 @@ curl -X POST https://api.pointservices.com/user-management-services-ws/oauth2/00
 }'
 ```
 
+Use the `useralias` parameter when your organization requires that the authenticated principal impersonate an account within your organization. This feature must be enabled by your account manager.  
+
+```bash
+curl -X POST https://api.pointservices.com/user-management-services-ws/oauth2/002/signInWithPassword \
+-H "Content-Type: application/json" \
+-d '{
+  "username": "sharedUsername",
+  "password": "sharedPassword",
+  "useralias": "yourUserAlias"
+}'
+```
+
 The response will be a json structure that includes:
 - `access_token`: Used for authenticated requests to the webhook testing endpoint.
 - `refresh_token`: Used to obtain a new access token once the current one expires.
