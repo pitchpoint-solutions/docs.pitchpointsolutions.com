@@ -34,10 +34,12 @@ curl -X POST https://api.pointservices.com/user-management-services-ws/oauth2/00
 #### Request Data Properties
 <div class="datatable-begin"></div>
 
-| Property | Description | Type | Default |
-|----------|-------------|------|---------|
-| username | Your username. | string | |
-| password | Your password. | string | |
+| Property  | Description                                                                                                                         | Type   | Required |
+|-----------|-------------------------------------------------------------------------------------------------------------------------------------|--------|----------|
+| username  | Your username.                                                                                                                      | string | yes      |
+| password  | Your password.                                                                                                                      | string | yes      |
+| useralias | If your company is using a shared username and password, set this parameter so that your actions are attributed specifically to you | string | no       |
+
 
 <div class="datatable-end"></div>
 
