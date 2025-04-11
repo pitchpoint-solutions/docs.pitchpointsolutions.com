@@ -17,7 +17,8 @@ curl -X POST https://api.pointservices.com/user-management-services-ws/oauth2/00
 -H "Content-Type: application/json" \
 -d '{
   "username": "customerUsername",
-  "password": "customerPassword"
+  "password": "customerPassword",
+  "useralias": "optionalUserAlias"
 }'
 ```
 
