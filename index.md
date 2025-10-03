@@ -8,7 +8,7 @@ nav_order: 1
 
 Here, you'll find comprehensive guides and documentation to help you start working with PointServices platform as quickly as possible.
 
-## Encompass 
+## Encompass
 - [Workflow Rule](/encompass/workflow_rule/index)
 
 ## Authentication
