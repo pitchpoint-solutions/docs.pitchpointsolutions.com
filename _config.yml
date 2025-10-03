@@ -65,7 +65,7 @@ callouts:
     title: API Reference
     color: blue
   before_starting:
-    title: Before Starting 
+    title: Before Starting
     color: green
 
 collections:
@@ -75,6 +75,10 @@ collections:
   developer_guides:
     permalink: "/:collection/:path/"
     output: true
+  encompass:
+    permalink: "/:collection/:path/"
+    output: true
+
 
 
 just_the_docs:
@@ -104,6 +108,9 @@ just_the_docs:
       # Exclude the collection from the search
       # Supports true or false (default)
       # search_exclude: true
-
+    encompass:
+      name: Encompass Integration
+      nav_exclude: false
+      nav_fold: true
 
 
