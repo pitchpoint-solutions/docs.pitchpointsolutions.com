@@ -1,13 +1,13 @@
 ---
-title: Epc
-layout: epc
+title: Workflow Rule
+layout: encompass
 nav_order: 4
 has_children: true
 ---
 
 # Sample Workflow Rule
 
-Workflow Rule [download](/encompass/epc/Order%20PPS%20ADV.xml)
+Workflow Rule [download](/encompass/workflow_rule/Order%20PPS%20ADV.xml)
 
 To import, 
 * Sign in to the Web / Admin Portal
