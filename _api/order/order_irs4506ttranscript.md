@@ -198,7 +198,7 @@ Example:
       }
     ]
   },
-  "Ref": "http://localhost:8080/riskinsight-services-ws/resources/v1/sami/0000000000000134076",
+  "Ref": "https://api.pointservices.com/riskinsight-services-ws/resources/v1/sami/0000000000000134076",
   "Status": {
     "Code": "U001",
     "Description": "Unserviceable"
