@@ -74,10 +74,10 @@ data='{
 # Replace the place holder %%FILE_DATA%% with the actual base64 encoded bytes
 data=$(echo "$data" | sed "s#%%FILE_DATA%%#$file#g")
 
-curl -X POST "${url}"
--H "Authorization: Bearer your_access_token_here"
--H "Content-Type: application/json"
--H "Accept: application/json"
+curl -X POST "${url}" \
+-H "Authorization: Bearer your_access_token_here" \
+-H "Content-Type: application/json" \
+-H "Accept: application/json" \
 -d "${data}"
 ```
 

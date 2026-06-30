@@ -42,10 +42,10 @@ The following example orders a 1040 Return Transcript (6a) for a joint return fo
 
 
 ```bash
-curl -X POST https://api.pointservices.com/riskinsight-services-ws/resources/v1/sami/IRS4506TTranscript/PDF-001 
--H "Authorization: Bearer your_access_token_here" 
--H "Content-Type: application/json" 
--H "Accept: application/json" 
+curl -X POST https://api.pointservices.com/riskinsight-services-ws/resources/v1/sami/IRS4506TTranscript/PDF-001 \
+-H "Authorization: Bearer your_access_token_here" \
+-H "Content-Type: application/json" \
+-H "Accept: application/json"
 -d '{
   "CorrelationID": "JointIRS4506T1040",
   "Preferences": {
@@ -182,9 +182,9 @@ As you can see from the above response, it may take some time for the final repo
 Using the url returned in the `Ref`, poll (we suggest every 10 minutes) until you receive the report.  
 
 
-```bash
-curl -X GET https://api.pointservices.com/riskinsight-services-ws/resources/v1/sami/0000000000000000000 
--H "Authorization: Bearer your_access_token_here" 
+curl -X GET https://api.pointservices.com/riskinsight-services-ws/resources/v1/sami/0000000000000000000 \
+-H "Authorization: Bearer your_access_token_here" \
+-H "Content-Type: application/json"
 -H "Content-Type: application/json" 
 
 ```
@@ -241,9 +241,9 @@ jq -r '.Attachments.Attachment[] | select(.Classifier == "report") | .Document' 
 The following example orders a 1040 Return Transcript (6a) for an individual for the years 2025 and 2024.
 
 ```bash
-curl -X POST https://api.pointservices.com/riskinsight-services-ws/resources/v1/sami/IRS4506TTranscript/PDF-001 
--H "Authorization: Bearer your_access_token_here" 
--H "Content-Type: application/json" 
+curl -X POST https://api.pointservices.com/riskinsight-services-ws/resources/v1/sami/IRS4506TTranscript/PDF-001 \
+-H "Authorization: Bearer your_access_token_here" \
+-H "Content-Type: application/json"
 -d '{
   "CorrelationID": "IndividualIRS4506T1040",
   "Preferences": {
@@ -290,9 +290,9 @@ curl -X POST https://api.pointservices.com/riskinsight-services-ws/resources/v1/
 The following example demonstrates how to order a 1120 Return Transcript (6a) for a company for the years 2025 and 2024 by providing a company `Participant`.
 
 ```bash
-curl -X POST https://api.pointservices.com/riskinsight-services-ws/resources/v1/sami/IRS4506TTranscript/PDF-001
--H "Authorization: Bearer your_access_token_here" 
--H "Content-Type: application/json" 
+curl -X POST https://api.pointservices.com/riskinsight-services-ws/resources/v1/sami/IRS4506TTranscript/PDF-001 \
+-H "Authorization: Bearer your_access_token_here" \
+-H "Content-Type: application/json"
 -d '{
   "CorrelationID": "CompanyIRS4506T1120",
   "Preferences": {
@@ -345,9 +345,9 @@ curl -X POST https://api.pointservices.com/riskinsight-services-ws/resources/v1/
 This would order a 1040 Return Transcript (6a) for a Joint return, but omits the mandatory `JointTaxReturnSSN` and `JointTaxReturnPersonName` preferences.
 
 ```bash
-curl -X POST https://api.pointservices.com/riskinsight-services-ws/resources/v1/sami/IRS4506TTranscript/PDF-001 
--H "Authorization: Bearer your_access_token_here" 
--H "Content-Type: application/json" 
+curl -X POST https://api.pointservices.com/riskinsight-services-ws/resources/v1/sami/IRS4506TTranscript/PDF-001 \
+-H "Authorization: Bearer your_access_token_here" \
+-H "Content-Type: application/json"
 -d '{
   "CorrelationID": "JointIRS4506T1040",
   "Preferences": {
