@@ -34,12 +34,12 @@ If you do not configure it, you will need to send it each time a new order is pl
 
 ### Step 2: Place an order
 
-This request submits the order details along with a PDF that includes a completed 8821 form and the consent form.
+This request submits the order details along with a PDF that includes a completed SSA-89 form and the consent form.
 
 Include the access token in the `Authorization` header following the `Bearer` keyword. Replace `your_access_token_here` with the actual token you obtained during the authentication process.
 
 {: .api_ref }
-For further explanation of required mandatory fields and their meanings, refer to [IRS8821 Transcript API Reference](/api/order/order_irs8821transcript)
+For further explanation of required mandatory fields and their meanings, refer to [SSAForm89 ECBSV API Reference](/api/order/order_ssaform89ecbsv)
 
 
 #### Example EIN has been pre-configured 
@@ -48,7 +48,7 @@ The following example assumes that the EIN has already been configured on the pr
 
 
 ```bash
-curl -X POST https://api.pointservices.com/riskinsight-services-ws/resources/v1/sami/IRS8821Transcript/PDF-001 
+curl -X POST https://api.pointservices.com/riskinsight-services-ws/resources/v1/sami/SSAForm89ECBSV/PDF-001 
 -H "Authorization: Bearer your_access_token_here" 
 -H "Content-Type: application/json" 
 -H "Accept: application/json" 
@@ -188,13 +188,13 @@ curl -X GET https://api.pointservices.com/riskinsight-services-ws/resources/v1/s
     "Attachment": [
       {
         "Classifier": "report",
-        "ContentDisposition": "inline; filename=\"W-2 - Employee Earnings.2023.pdf\"; creation-date=\"Thu, 30 May 2024 14:35:52 EDT\"; modification-date=\"Thu, 30 May 2024 14:35:52 EDT\"; read-date=\"Thu, 30 May 2024 14:35:52 EDT\"; size=253797",
+        "ContentDisposition": "inline; filename=\"SSA-89 ECBSV Verification.pdf\"; creation-date=\"Thu, 30 May 2024 14:35:52 EDT\"; modification-date=\"Thu, 30 May 2024 14:35:52 EDT\"; read-date=\"Thu, 30 May 2024 14:35:52 EDT\"; size=253797",
         "ContentType": "application/pdf",
         "Document": "#BASE64PDF"
       }
     ]
   },
-  "CorrelationID": "IndividualIRS8821W2",
+  "CorrelationID": "IndividualSSAForm89ECBSV",
   "Messages": {
     "Message": [
       {
@@ -238,7 +238,7 @@ jq -r '.Attachments.Attachment[] | select(.Classifier == "report") | .Document' 
 The following example demonstrates ordering by providing the EIN on the request. 
 
 ```bash
-curl -X POST https://api.pointservices.com/riskinsight-services-ws/resources/v1/sami/IRS8821Transcript/PDF-001
+curl -X POST https://api.pointservices.com/riskinsight-services-ws/resources/v1/sami/SSAForm89ECBSV/PDF-001
 -H "Authorization: Bearer your_access_token_here" 
 -H "Content-Type: application/json" 
 -d '{

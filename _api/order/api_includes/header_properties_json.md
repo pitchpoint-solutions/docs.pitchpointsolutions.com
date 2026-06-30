@@ -3,6 +3,6 @@
 | Property      | Value            | Required? |
 |-------------- |------------------|-----------|
 | Content-Type  | application/json | true      |
-| Accept        | application/json | false     |
+| Accept        | application/json | true      |
 
 <div class="datatable-end"></div>
