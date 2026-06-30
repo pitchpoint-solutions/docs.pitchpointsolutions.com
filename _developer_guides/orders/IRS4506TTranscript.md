@@ -1,12 +1,12 @@
 ---
-title: IRS4506T Transcripts
+title: IRS Tax Transcripts
 layout: dev_guide
 parent: Orders
 nav_order: 20
 ---
 Stable
 {: .label .label-green }
-# IRS 4506-T Transcript Ordering Guide
+# IRS Tax Transcripts Ordering Guide
 {:.no_toc}
 
 * TOC
@@ -33,7 +33,7 @@ This request submits the order details along with a PDF that includes a complete
 Include the access token in the `Authorization` header following the `Bearer` keyword. Replace `your_access_token_here` with the actual token you obtained during the authentication process.
 
 {: .api_ref }
-For further explanation of required mandatory fields and their meanings, refer to [IRS4506T Transcript API Reference](/api/order/order_irs4506ttranscript)
+For further explanation of required mandatory fields and their meanings, refer to [IRS Tax Transcripts](/api/order/order_irs4506ttranscript)
 
 
 #### Example Joint request

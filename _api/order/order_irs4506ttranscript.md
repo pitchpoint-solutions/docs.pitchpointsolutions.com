@@ -1,5 +1,5 @@
 ---
-title: IRS4506T Transcript
+title: IRS Tax Transcripts
 layout: api_ref
 nav_order: 20
 parent: Order
@@ -10,7 +10,7 @@ Stable
 
 ## Order
 
-Ordering an IRS4506TTranscript product.
+Ordering an IRS Tax Transcripts product.
 
 {: .before_starting }
 Get the URL from your Pitchpoint Account Representative of where you should be submitting your orders to.
