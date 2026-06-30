@@ -1,7 +1,7 @@
 ---
 title: IRS Tax Transcripts
 layout: api_ref
-nav_order: 20
+nav_order: 9
 parent: Order
 datatable: true
 ---

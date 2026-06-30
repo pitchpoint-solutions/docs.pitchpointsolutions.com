@@ -2,7 +2,7 @@
 title: IRS Tax Transcripts
 layout: dev_guide
 parent: Orders
-nav_order: 20
+nav_order: 9
 ---
 Stable
 {: .label .label-green }
